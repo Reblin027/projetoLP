@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contatocss.css">
+    <link rel="stylesheet" href="css/navestilo.css">
+    <script src="js/contatojs.js"></script>
+    <link rel="stylesheet" href="css/topocss.css">
+    <script src="js/topojs.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Contato</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="LP.html" target="_blank">Página Principal</a></li>
+            <li><a href="curriculo.html" target="_blank">Meu currículo</a></li>
+            <li><a href="servicos.html" target="_blank">Serviços</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Entre em Contato</h2>
+        <p>Preencha o formulário abaixo para entrar em contato comigo. Estou a disposição para responder às suas dúvidas e discutir como posso ajudar em seu projeto.</p>
+
+    <form action="#" method="post" onsubmit="validarFormulario();"></form>
+
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="tipoPessoa">Tipo de pessoa:</label>
+        <select name="tipoPessoa" id="tipoPessoa">
+            <option value="pessoaFisica">Pessoa física</option>
+            <option value="pessoaJuridica">Pessoa júridica</option>
+        </select>
+
+        <label for="horarioContato">Melhor horário de contato:</label>
+        <input type="text" id="horarioContato" name="horarioContato">
+
+        <label for="tipoServico">Tipo de serviço desejado:</label>
+        <input type="text" id="tipoServico" name="tipoServico">
+
+        <label for="descricao">Breve descrição do projeto:</label>
+        <textarea name="descricao" id="descricao"></textarea>
+
+        <button type="submit">Enviar</button>
+
+<footer>
+    <p>&copy;2023 Gustavo Lucas Reblin</p>
+</footer>
+
+<button id="top-button" class="hidden"></button>
+
+    </section>
+</body>
+</html>
